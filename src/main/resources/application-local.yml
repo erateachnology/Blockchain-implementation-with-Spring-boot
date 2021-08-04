@@ -1,0 +1,25 @@
+spring:
+  profiles: local
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/blockchain
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8000
+cloud:
+  aws:
+    credentials:
+      access-key: AKIAZN2RRW67EKJRTBUS
+      secret-key: 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
+    region:
+      static: us-east-2
+application:
+  bucket:
+    name: blockchain-application-source
+data:
+  save:
+    path: D:\Fiverr Projects\Blockchain\Files\
